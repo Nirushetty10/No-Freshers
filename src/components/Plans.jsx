@@ -131,7 +131,7 @@ export default function Plans() {
         position: "top-center",
         autoClose: 1500
       });
-      const response = await axios.post('http://localhost:4000/api/user', payLoad);
+      const response = await axios.post('https://nofreshersserver.onrender.com/api/user', payLoad);
       toast.dismiss();
       debugger
       toast.success(response.data, 
